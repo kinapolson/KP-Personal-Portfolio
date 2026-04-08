@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #274d99;
+}
+
+/* Navbar */
+nav {
+    font-family: "Anton", sans-serif;
+    font-weight: 100;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #274d99;
+    padding: 1em;
+    list-style-type: none; 
+}
+
+#navHeader {
+    color: #e0d9c7;
+    text-align: left;
+}
+
+.nav-tabs {
+    display: flex;
+    align-items: center;
+}
+
+.nav-tabs li {
+    margin-left: 20px;
+}
+
+.nav-tabs li:first-child {
+    margin-left: 0;
+}
+
+li a {
+    text-decoration: none;
+    color: #e0d9c7;
+    font-size: 15px;
+    padding: 0.5em;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: #e0d9c7;
+}
+/* Navbar */
+
+/* Socials Section */
+.socials {
+    text-align: center;
+    margin-top: 120px;
+    font-family: "Anton", sans-serif;
+    color: #e0d9c7;
+}
+
+.socials h1 {
+    font-family: "Anton", sans-serif;
+    color: #e0d9c7;
+    font-size: 120px;
+    padding: 55px 20px;
+}
+
+/* Container */
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Cards */
+.social-card {
+    text-decoration: none;
+    color: #274d99; 
+    border: 2px solid #e0d9c7;
+    background-color: #e0d9c7; 
+    border-radius: 20px;
+    padding: 30px;
+    width: 220px;
+    transition: all 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Hover effect */
+.social-card:hover {
+    background-color: #274d99; 
+    color: #e0d9c7; 
+    transform: translateY(-5px);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Text inside cards */
+.social-card h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.social-card p {
+    font-size: 0.9rem;
+}
