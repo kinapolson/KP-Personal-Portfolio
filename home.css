@@ -66,12 +66,20 @@ li a {
 /* Section 1 */
 
 
-/* Section 2 
+
 #s2txt {
     color: #274d99;
     font-family: "Anton", sans-serif;
     font-size: 250px;
-    text-align: center;
+    text-align: right;
+}
+
+#descriptxt {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 #s2img {
@@ -85,4 +93,3 @@ li a {
     background-color: #e0d9c7;
     padding: 75px 20px 270px 20px;   
 }
-*/
