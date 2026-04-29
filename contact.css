@@ -68,6 +68,15 @@ li a {
     padding: 55px 20px;
 }
 
+.socials-intro {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: #e0d9c7;
+    opacity: 0.8;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
 /* Container */
 .social-container {
     display: flex;
@@ -106,3 +115,42 @@ li a {
 .social-card p {
     font-size: 0.9rem;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    li a {
+        font-size: 12px;
+        padding: 0.3em 0.5em;
+    }
+    .nav-tabs li {
+        margin-left: 12px;
+    }
+    .socials {
+        margin-top: 60px;
+    }
+    .socials h1 {
+        font-size: 64px;
+        padding: 30px 20px;
+    }
+    .social-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    #navHeader {
+        font-size: 14px;
+    }
+    li a {
+        font-size: 11px;
+        padding: 0.25em 0.4em;
+    }
+    .nav-tabs li {
+        margin-left: 8px;
+    }
+    .socials h1 {
+        font-size: 48px;
+    }
+}
+/* Responsive */
