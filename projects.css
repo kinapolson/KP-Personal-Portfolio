@@ -57,6 +57,46 @@ li a {
 }
 
 
+/* Project Detail Styles */
+.tech-stack {
+    font-size: 13px;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+    opacity: 0.75;
+}
+
+.section .section-label {
+    font-family: "Anton", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    opacity: 0.55;
+}
+
+.text ul {
+    color: #274d99;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    margin-left: 18px;
+    margin-right: 20px;
+    line-height: 1.85;
+}
+
+.retrospective {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px dashed rgba(39, 77, 153, 0.3);
+}
+
+.retrospective p:last-child {
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.8;
+}
+/* Project Detail Styles */
+
 /* Section */
 .section {
     display: flex;

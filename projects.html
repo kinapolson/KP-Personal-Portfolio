@@ -20,19 +20,133 @@
   </nav>
 
     <!--Title Page Header-->
-    <p id="header">PROJECTS</p> 
+    <p id="header">PROJECTS</p>
 
-    <!--GWC Activist Website-->
+    <!--Hole 19 Local Golf Shop-->
     <div class="section">
       <div class="text">
         <h1>Hole 19 Local Golf Shop Website</h1>
-        <p>Languages: React</p>
-        <p>This is a website that is a basic mockup of a ficticious local golf shop.
-          Collaborted with Claude to gain practice with an AI tool.
-        </div> 
-        <a href="https://dig4503-week5.netlify.app/" target="_blank"> 
-        <img src="img/Golf Shop Website Thumbnail.png" atl="Thumbnail of the GWC Activist Website"></a>   
-        </p> 
+        <p class="tech-stack">HTML · CSS · JavaScript · Netlify</p>
+        <p>Hole 19 is a professional mockup for a local golf shop in Springfield, Illinois, specializing in equipment sales and custom club fitting services. The site targets amateur to professional golfers and communicates a helpful, knowledgeable brand voice across five fully designed pages. A modern green aesthetic and clean layout make navigation intuitive for both casual browsers and serious buyers.</p>
+
+        <p class="section-label">Key Features</p>
+        <ul>
+          <li>Dark mode toggle — switch between a light and dark green theme for visual comfort</li>
+          <li>Multi-page structure: Home, About, Services, Gallery, and Contact</li>
+          <li>Custom club fitting scheduling section with step-by-step service breakdown</li>
+          <li>Business history stats and "Why Us?" value proposition section</li>
+          <li>Gallery showcasing the fitting studio, workshop, and equipment showroom</li>
+        </ul>
+
+        <div class="retrospective">
+          <p class="section-label">Retrospective</p>
+          <p>Looking back, I'd replace the static scheduling forms with a real backend integration — something like Netlify Forms or a lightweight API. I'd also build mobile responsiveness in from day one rather than retrofitting it, and add micro-interactions like transitions and hover states to better match the polished brand identity the project aimed for.</p>
+        </div>
+      </div>
+      <a href="https://dig4503-week5.netlify.app/" target="_blank">
+        <img src="img/Golf Shop Website Thumbnail.png" alt="Thumbnail of Hole 19 Golf Shop Website">
+      </a>
+    </div>
+
+    <!--Checkout Form Website-->
+    <div class="section">
+      <div class="text">
+        <h1>Checkout Form Website</h1>
+        <p class="tech-stack">HTML · CSS · JavaScript · Netlify</p>
+        <p>A front-end checkout form application built to practice structured form design, input validation, and responsive layout principles. The project simulates a realistic e-commerce checkout flow with a clean, user-friendly interface. It served as a focused exercise in building forms that are both functional and accessible.</p>
+
+        <p class="section-label">Key Features</p>
+        <ul>
+          <li>Multi-field checkout form with real-time client-side validation</li>
+          <li>Clear visual hierarchy across form sections (billing, shipping, payment)</li>
+          <li>Responsive design that adapts cleanly to different screen sizes</li>
+          <li>Minimal UI focused on reducing friction and guiding the user through the flow</li>
+        </ul>
+
+        <div class="retrospective">
+          <p class="section-label">Retrospective</p>
+          <p>If I were building this today, I'd integrate a payment library like Stripe Elements to make it production-ready and use React Hook Form for cleaner state management. I'd also go deeper on accessibility — ensuring all fields have proper labels, ARIA attributes, and full keyboard navigation support.</p>
+        </div>
+      </div>
+      <a href="https://dig4503w6.netlify.app/" target="_blank">
+        <img src="img/Checkout Form Thumbnail.png" alt="Thumbnail of Checkout Form Website">
+      </a>
+    </div>
+
+    <!--F1 Race Tracker-->
+    <div class="section">
+      <div class="text">
+        <h1>F1 Race Tracker</h1>
+        <p class="tech-stack">React · HTML/CSS · JavaScript · Firebase · MongoDB · Claude AI · Netlify</p>
+        <p>A React application built for Formula 1 fans to track, log, and organize their race viewing experiences in one place. Users can save favorite teams and drivers, log race results with personal ratings and notes, and connect with other fans through a built-in community board. The project evolved from a localStorage prototype into a full-stack application backed by a real database.</p>
+
+        <p class="section-label">Key Features</p>
+        <ul>
+          <li>Save favorite F1 teams and drivers for quick access</li>
+          <li>Log race results with personal ratings, notes, and key moments</li>
+          <li>Filter race history by season</li>
+          <li>Community board for connecting with and messaging other fans</li>
+          <li>Profile management — username, email, password, profile photo, and account deletion</li>
+        </ul>
+
+        <div class="retrospective">
+          <p class="section-label">Retrospective</p>
+          <p>The biggest thing I'd change is committing to a real database from day one instead of starting with localStorage. The migration mid-project cost significant time and introduced the bugs I'm still resolving — like race history appearing when logged out and duplicate race entries. I'd also set up global state management early on, either Zustand or Redux, to avoid the inconsistencies that came from passing state around manually.</p>
+        </div>
+      </div>
+      <a href="https://f1racetracker.netlify.app/" target="_blank">
+        <img src="img/F1 Race Tracker Thumbnail.png" alt="Thumbnail of F1 Race Tracker">
+      </a>
+    </div>
+
+    <!--PGA Golf Live Leaderboard-->
+    <div class="section">
+      <div class="text">
+        <h1>PGA Golf Live Leaderboard</h1>
+        <p class="tech-stack">React · RapidAPI · OpenWeather API · HTML/CSS · JavaScript · Netlify</p>
+        <p>A React dashboard that displays live PGA Tour standings alongside real-time weather conditions for the tournament location, all in a single interactive view. The project demonstrates practical external API integration — combining two live data sources into a cohesive UI for golf fans. It's a hands-on example of working with asynchronous data and managing multiple API responses in React.</p>
+
+        <p class="section-label">Key Features</p>
+        <ul>
+          <li>Live PGA Tour leaderboard pulled from the Golf Leaderboard Data API via RapidAPI</li>
+          <li>Real-time weather display for the active tournament's location via OpenWeather API</li>
+          <li>Combined dashboard giving fans scores and on-site conditions at a glance</li>
+          <li>Asynchronous data fetching with loading state handling</li>
+        </ul>
+
+        <div class="retrospective">
+          <p class="section-label">Retrospective</p>
+          <p>I'd add more robust error handling for when either API is rate-limited or unavailable — right now a failed fetch isn't handled gracefully. I'd also implement a lightweight caching layer to reduce redundant calls on re-renders, and prioritize a mobile-first layout so fans can check scores from their phones courtside.</p>
+        </div>
+      </div>
+      <a href="https://dig4503-week12.netlify.app/" target="_blank">
+        <img src="img/PGA Leaderboard Thumbnail.png" alt="Thumbnail of PGA Golf Live Leaderboard">
+      </a>
+    </div>
+
+    <!--Local File Reader MCP Server-->
+    <div class="section">
+      <div class="text">
+        <h1>Local File Reader — MCP Server</h1>
+        <p class="tech-stack">MCP (Model Context Protocol) · Node.js · Claude · GitHub</p>
+        <p>A custom Model Context Protocol (MCP) server that gives Claude the ability to read text files directly from a local directory — no manual copy-pasting required. Built as my first MCP tool, it was a hands-on exploration of how to extend Claude's capabilities beyond the chat interface and into a developer's actual file system. It's especially useful for tasks like summarizing notes, analyzing local datasets, or reviewing logs in context.</p>
+
+        <p class="section-label">Key Features</p>
+        <ul>
+          <li>Reads text files directly from a configured local directory</li>
+          <li>Integrates natively with Claude via the MCP protocol</li>
+          <li>Eliminates the manual copy-paste step when feeding local content into Claude</li>
+          <li>Practical use cases: summarizing notes, analyzing data files, reviewing code</li>
+        </ul>
+
+        <div class="retrospective">
+          <p class="section-label">Retrospective</p>
+          <p>I'd expand support beyond plain text to include JSON parsing, CSV row access, and Markdown rendering for richer data extraction. I'd also add directory listing so Claude can browse available files before selecting one, improve error messages for misconfigured paths, and package it as a clean npm install experience to lower the barrier for other developers.</p>
+        </div>
+      </div>
+      <a href="https://github.com/kinapolson/Local-File-Reader" target="_blank">
+        <img src="img/Local File Reader Thumbnail.png" alt="Thumbnail of Local File Reader MCP Server">
+      </a>
     </div>
 
     <!--Rock Paper Scissors-->
@@ -40,13 +154,11 @@
       <div class="text">
         <h1>Rock Paper Scissors Game</h1>
         <p>Languages: HTML - CSS - JavaScript</p>
-        <p>The Rocks Paper Scissors game website
-           is a simple interactive web application designed
-            for users to play the classic game against a computer opponent.
-        </div> 
-        <a href="file:///C:/Users/Administrator/OneDrive/UCF/Personal%20Projects/Rock%20Paper%20Scissor%20Game/rps_home.html" target="_blank">
-        <img src="img/Rock Paper Scissors Thumbnail.JPG" atl="Thumbnail of the Rock Paper Scissors Game"></a>   
-        </p> 
+        <p>The Rock Paper Scissors game website is a simple interactive web application designed for users to play the classic game against a computer opponent.</p>
+      </div>
+      <a href="file:///C:/Users/Administrator/OneDrive/UCF/Personal%20Projects/Rock%20Paper%20Scissor%20Game/rps_home.html" target="_blank">
+        <img src="img/Rock Paper Scissors Thumbnail.JPG" alt="Thumbnail of the Rock Paper Scissors Game">
+      </a>
     </div>
 
     <!--GWC Personal Website-->
@@ -54,12 +166,11 @@
       <div class="text">
         <h1>GWC Personal Website</h1>
         <p>Languages: HTML - CSS</p>
-        <p>This personal portfolio website
-           showcases my background, interests, and projects from 2016.
-        </div> 
-        <a href="https://gwc-pw.netlify.app/" target="_blank">
-        <img src="img/GWC Portfolio Thumbnail.JPG" atl="Thumbnail of the GWC Portfolio Website"></a>   
-        </p> 
+        <p>This personal portfolio website showcases my background, interests, and projects from 2016.</p>
+      </div>
+      <a href="https://gwc-pw.netlify.app/" target="_blank">
+        <img src="img/GWC Portfolio Thumbnail.JPG" alt="Thumbnail of the GWC Portfolio Website">
+      </a>
     </div>
 
     <!--GWC Personality Quiz Website-->
@@ -67,14 +178,11 @@
       <div class="text">
         <h1>GWC Personality Quiz Website</h1>
         <p class="language">Languages: HTML - CSS - JavaScript</p>
-        <p>This is a personality quiz website that
-           determines whether a user is a
-           waffle or pancake person
-           based on their responses to five questions.
-        </div> 
-        <a href="https://gwc-pq.netlify.app/" target="_blank">
-        <img src="img/GWC Personality Quiz Thumbnail.JPG" atl="Thumbnail of the GWC Personality Quiz Website"></a>   
-        </p> 
+        <p>This is a personality quiz website that determines whether a user is a waffle or pancake person based on their responses to five questions.</p>
+      </div>
+      <a href="https://gwc-pq.netlify.app/" target="_blank">
+        <img src="img/GWC Personality Quiz Thumbnail.JPG" alt="Thumbnail of the GWC Personality Quiz Website">
+      </a>
     </div>
 
     <!--GWC Activist Website-->
@@ -82,15 +190,11 @@
       <div class="text">
         <h1>GWC Activist Website</h1>
         <p>Languages: HTML - CSS - JavaScript</p>
-        <p>This website offers an overview of climate change, 
-          detailing its causes, effects on the environment, 
-          and preventative measures. Additionally, 
-          it features a dedicated page on strategies 
-          to combat climate change.
-        </div> 
-        <a href="https://gwc-activist-climate-cha.netlify.app/" target="_blank"> 
-        <img src="img/GWC Activist Thumbnail.JPG" atl="Thumbnail of the GWC Activist Website"></a>   
-        </p> 
+        <p>This website offers an overview of climate change, detailing its causes, effects on the environment, and preventative measures. It also features a dedicated page on strategies to combat climate change.</p>
+      </div>
+      <a href="https://gwc-activist-climate-cha.netlify.app/" target="_blank">
+        <img src="img/GWC Activist Thumbnail.JPG" alt="Thumbnail of the GWC Activist Website">
+      </a>
     </div>
 </body>
-</html> 
+</html>
