@@ -41,5 +41,94 @@
             </a>
         </div>
     </section>
+
+  <!-- Contact Form -->
+  <section class="contact-form-section">
+    <h2 class="form-title">Send a Message</h2>
+
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Jane">
+          <span class="error-msg" id="firstNameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Doe">
+          <span class="error-msg" id="lastNameError"></span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="jane@example.com">
+        <span class="error-msg" id="emailError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="What's on your mind?"></textarea>
+        <span class="error-msg" id="messageError"></span>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+      <p class="success-msg" id="successMsg">Message sent! I'll get back to you soon.</p>
+    </form>
+  </section>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const fields = {
+        firstName: document.getElementById('firstName').value.trim(),
+        lastName:  document.getElementById('lastName').value.trim(),
+        email:     document.getElementById('email').value.trim(),
+        message:   document.getElementById('message').value.trim(),
+      };
+
+      // Clear previous errors
+      document.querySelectorAll('.error-msg').forEach(el => el.textContent = '');
+      document.querySelectorAll('.form-group input, .form-group textarea')
+              .forEach(el => el.classList.remove('input-error'));
+      document.getElementById('successMsg').style.display = 'none';
+
+      let valid = true;
+
+      if (!fields.firstName) {
+        showError('firstNameError', 'firstName', 'First name is required.');
+        valid = false;
+      }
+      if (!fields.lastName) {
+        showError('lastNameError', 'lastName', 'Last name is required.');
+        valid = false;
+      }
+      if (!fields.email) {
+        showError('emailError', 'email', 'Email is required.');
+        valid = false;
+      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fields.email)) {
+        showError('emailError', 'email', 'Please enter a valid email address.');
+        valid = false;
+      }
+      if (!fields.message) {
+        showError('messageError', 'message', 'Message is required.');
+        valid = false;
+      }
+
+      if (valid) {
+        // TODO: replace with real backend call (fetch/axios to API endpoint)
+        console.log('Form submission:', fields);
+        document.getElementById('successMsg').style.display = 'block';
+        this.reset();
+      }
+    });
+
+    function showError(errorId, fieldId, message) {
+      document.getElementById(errorId).textContent = message;
+      document.getElementById(fieldId).classList.add('input-error');
+    }
+  </script>
+
 </body>
 </html>
