@@ -1,19 +1,18 @@
-Project Name: Tip Calculator
-Netlify: https://tip-calc-appp.netlify.app/
+Project Name: Personal Portfolio
+Netlify: https://kp-personal.netlify.app/
 
 Description:
-This React web app is a clean and user-friendly tip calculator that helps users quickly calculate tip amounts, total bill cost, and how much each person should pay when splitting a bill. 
+A responsive React-based personal portfolio designed to showcase my projects, technical skills, and development experience. The site highlights my work through clean and intuitive desing along with interactive elements to make engaging for users viewing my work.
 
 Features:
-- Bill Amount Input: Users can enter a bill amount with proper currency formatting and validation.
-- Tip Selection: Choose from preset tip percentages or enter a custom tip.
-- Split Between People: Input the number of people to divide the total bill evenly.
-- Live Calculations: Displays total tip, total bill, and per-person cost.
-- Input Validation: Prevents negative values, invalid inputs, and incorrect formats with error messages.
-- Reset Functionality: Clears all inputs and resets the calculator.
+- Project Showcase: Displays completed projects with descriptions and deployed sites.
+- Responsive Design: Compatiable for desktop, tablet, and mobile viewing.
+- Navigation System: Smooth navigation between pages such as Home, Projects, and Socials.
+- Interactive UI: Includes visual feedback to enhance user experience.
+- Contact Section: Allows users to reach out through a form and provided contact links.
 
 Tech Stack:
-- React (Functional Components + Hooks)
+- React
 - HTML
 - CSS
 - JavaScript
@@ -22,7 +21,7 @@ Tech Stack:
 - Netlify
 
 Update (4.29.2026):
-Added input validation for bill amount, tip percentage, and number of people
-Added user-friendly error messages
-Improved UI styling with better spacing, focus states, and visual feedback
-Added empty state for results display to improve clarity
+Added new project entries including Tip Calculator
+Improved layout and spacing across sections
+Enhanced UI with animations and smoother transitions
+Refined project descriptions and overall content for clarity
