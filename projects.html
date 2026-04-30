@@ -31,11 +31,11 @@
 
         <p class="section-label">Key Features</p>
         <ul>
-          <li>Dark mode toggle — switch between a light and dark green theme for visual comfort</li>
-          <li>Multi-page structure: Home, About, Services, Gallery, and Contact</li>
-          <li>Custom club fitting scheduling section with step-by-step service breakdown</li>
-          <li>Business history stats and "Why Us?" value proposition section</li>
-          <li>Gallery showcasing the fitting studio, workshop, and equipment showroom</li>
+          <li>Dark mode toggle — light and dark green themes</li>
+          <li>Five-page layout: Home, About, Services, Gallery, Contact</li>
+          <li>Custom club fitting scheduling section</li>
+          <li>Business history stats and "Why Us?" section</li>
+          <li>Gallery: fitting studio, workshop, and showroom</li>
         </ul>
 
         <div class="retrospective">
@@ -57,10 +57,10 @@
 
         <p class="section-label">Key Features</p>
         <ul>
-          <li>Multi-field checkout form with real-time client-side validation</li>
-          <li>Clear visual hierarchy across form sections (billing, shipping, payment)</li>
-          <li>Responsive design that adapts cleanly to different screen sizes</li>
-          <li>Minimal UI focused on reducing friction and guiding the user through the flow</li>
+          <li>Multi-field form with client-side validation</li>
+          <li>Structured sections: billing, shipping, payment</li>
+          <li>Responsive layout across screen sizes</li>
+          <li>Minimal UI with a clear user flow</li>
         </ul>
 
         <div class="retrospective">
@@ -82,11 +82,11 @@
 
         <p class="section-label">Key Features</p>
         <ul>
-          <li>Save favorite F1 teams and drivers for quick access</li>
-          <li>Log race results with personal ratings, notes, and key moments</li>
+          <li>Save favorite F1 teams and drivers</li>
+          <li>Log races with ratings and personal notes</li>
           <li>Filter race history by season</li>
-          <li>Community board for connecting with and messaging other fans</li>
-          <li>Profile management — username, email, password, profile photo, and account deletion</li>
+          <li>Community board for fan discussions</li>
+          <li>Profile management: username, photo, account settings</li>
         </ul>
 
         <div class="retrospective">
@@ -108,10 +108,10 @@
 
         <p class="section-label">Key Features</p>
         <ul>
-          <li>Live PGA Tour leaderboard pulled from the Golf Leaderboard Data API via RapidAPI</li>
-          <li>Real-time weather display for the active tournament's location via OpenWeather API</li>
-          <li>Combined dashboard giving fans scores and on-site conditions at a glance</li>
-          <li>Asynchronous data fetching with loading state handling</li>
+          <li>Live PGA Tour standings via RapidAPI</li>
+          <li>Real-time tournament weather via OpenWeather API</li>
+          <li>Combined single-page dashboard</li>
+          <li>Async data fetching with loading states</li>
         </ul>
 
         <div class="retrospective">
@@ -133,10 +133,10 @@
 
         <p class="section-label">Key Features</p>
         <ul>
-          <li>Reads text files directly from a configured local directory</li>
-          <li>Integrates natively with Claude via the MCP protocol</li>
-          <li>Eliminates the manual copy-paste step when feeding local content into Claude</li>
-          <li>Practical use cases: summarizing notes, analyzing data files, reviewing code</li>
+          <li>Reads local text files via MCP protocol</li>
+          <li>Native Claude integration — no copy-paste needed</li>
+          <li>Useful for notes, logs, datasets, and code files</li>
+          <li>Simple setup via GitHub</li>
         </ul>
 
         <div class="retrospective">
@@ -146,6 +146,33 @@
       </div>
       <a href="https://github.com/kinapolson/Local-File-Reader" target="_blank">
         <img src="img/Local File Reader Thumbnail.png" alt="Thumbnail of Local File Reader MCP Server">
+      </a>
+    </div>
+
+    <!--Tip Calculator-->
+    <div class="section">
+      <div class="text">
+        <h1>Tip Calculator</h1>
+        <p class="tech-stack">React 18 · Vite · Vanilla CSS · GitHub Pages</p>
+        <p>A small, focused React app that calculates tip amounts and splits the bill for a group. I built this as a deliberate portfolio exercise — something constrained enough to finish in an afternoon but complex enough to require real decisions about state architecture, controlled input patterns, and user-friendly validation. The goal wasn't to build something novel; it was to build something common and do it carefully.</p>
+
+        <p class="section-label">Key Features</p>
+        <ul>
+          <li>Preset tip buttons (15%, 18%, 20%, 25%) — deselect on custom input</li>
+          <li>Custom tip field — presets reactivate when cleared</li>
+          <li>Per-person totals shown only when party size exceeds 1</li>
+          <li>Blur-triggered validation — errors on field exit, not mid-type</li>
+          <li>Empty state prompt before any input is entered</li>
+          <li>One-way data flow — all state in parent, child components stateless</li>
+        </ul>
+
+        <div class="retrospective">
+          <p class="section-label">Retrospective</p>
+          <p>The calculator itself is simple — what I was actually practicing was making decisions I could defend. I chose blur validation because surfacing errors mid-type is hostile UX. I centralized validation as pure functions so I could reason about them in isolation. I extracted ErrorMessage as its own component not because one was hard to write, but because three components sharing identical markup is exactly where extraction starts paying off. If I were scaling this: TypeScript, a form library, a custom hook to separate logic from layout. At this size, those would have been overhead without payoff — knowing where that line is matters as much as knowing the tools.</p>
+        </div>
+      </div>
+      <a href="https://tip-calc-appp.netlify.app/" target="_blank">
+        <img src="img/Tip Calculator Thumbnail.png" alt="Thumbnail of Tip Calculator">
       </a>
     </div>
 
